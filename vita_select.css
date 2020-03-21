@@ -1,0 +1,132 @@
+p,span,a,label,h1,h2,h3{
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
+  color: #353535;
+}
+
+.pc{display: block !important;}
+.sp{display: none !important;}
+
+#all_wrap{
+  max-width: 1280px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headname{
+  font-size: 150%;
+  margin: 0 auto;
+}
+
+.border{
+  position: relative;
+  width: 100%;
+  border: 0.5px solid #353535;
+  /* border-style:dotted; */
+  /* margin-top: 2px; */
+}
+
+.contents_wrap{
+  position: relative;
+  display: block;
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+  /* float: right; */
+  /* white-space: nowrap; */
+}
+
+.footer_end{
+  width: 100%;
+  height: 7vw;
+  background-color: #b1ba75;
+  text-align: center;
+  position: relative;/*←絶対位置*/
+  left: 0;
+  bottom: 0; /*下に固定*/
+}
+.end_menu{
+  display: table;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
+  padding-top: 0.5%;
+  margin: 10px auto;
+  /* border: 1px solid #fff; */
+}
+.end_menu a,span{
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1.5vw;
+}
+
+.footer_end .border{
+  width: 100%;
+  border: 0.7px solid #fff;
+  position: absolute;
+  top: 30%;
+}
+.copyright{
+  font-size: 1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-30%) translateX(-50%);
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .pc{display: none !important;}
+  .sp{display: block !important;}
+
+  .footer_end{
+    width: 100%;
+    height: 9vw;
+    background-color: #b1ba75;
+    text-align: center;
+    position: relative;/*←絶対位置*/
+    left: 0;
+    bottom: 0; /*下に固定*/
+    margin: 0 auto;
+  }
+  .end_menu{
+    display: table;
+  	table-layout: fixed;
+  	text-align: center;
+  	width: 100%;
+    padding-top: 0.5%;
+    margin: 10px auto;
+    /* border: 1px solid #fff; */
+  }
+  .end_menu a,span{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 3vw;
+  }
+
+  .fotter_caption{
+    font-size: 1.5vw;
+  }
+
+  .footer_end .border{
+    width: 100%;
+    border: 0.7px solid #fff;
+    position: absolute;
+    top: 30%;
+  }
+  .copyright{
+    font-size: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-30%) translateX(-50%);
+    color: #fff;
+  }
+}
